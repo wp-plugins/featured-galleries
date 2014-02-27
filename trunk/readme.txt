@@ -1,4 +1,4 @@
-=== Admin Classic Borders ===
+=== Featured Galleries ===
 Contributors: 
 Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
