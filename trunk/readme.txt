@@ -18,6 +18,10 @@ Have you ever added a Featured Image to a post and thought to yourself, 'I wish 
 
 Just like with Featured Images, of course, themes will need to call a Featured Gallery in any template files where the Featured Gallery should appear. I've tried to make this as intuitive as possible. Just like WordPress comes with **get_post_thumbnail_id()** built-in, you can use **get_post_gallery_ids()** to call the Featured Gallery. It needs the post's ID, and will return a PHP array with the ID's of all images in the post's featured gallery. Additionally you can send a second argument, "string", which will cause the function to return a comma-delimited string instead of an array.
 
+= Want to Help? =
+
+I'd love some help with internationalization. I'm not sure how to do that. Also, if anyone wants to take a look at admin.js, which calls up the media manager, I feel like the way that I open it to the gallery-edit state could be improved. (Opens to featured-gallery state, plugs in pre-selected images, then changes state to gallery-edit, and plugs in pre-selected images. Couldn't get selection to transfer, so there's a weird flash as it propagates.)
+
 == Installation ==
 
 There are two ways to install this plugin.
