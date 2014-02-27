@@ -12,9 +12,13 @@ WordPress includes the ability to give posts a "Featured Image". Galleries requi
 
 == Description ==
 
-WordPress includes the ability to give posts a "Featured Image". Galleries require shortcodes, though, which can confuse non-techie clients. This plugin adds "Featured Galleries". These behave exactly like Featured Images, in that there is a metabox in the create/edit post/page/custom-post-type screens. This metabox allows users to select images to add to the Featured Gallery, re-order those images, and save them. Users get a thumbnail preview just like they do with Featured Images.
+Have you ever added a Featured Image to a post and thought to yourself, 'I wish I could add more than one image this way'? Well, now you can. "Featured Galleries" mirrors the Featured Images functionality of WordPress. The only difference is that posts get an entire gallery rather than just a single image. These galleries behave almost exactly like Featured Images, and make use of  WordPress's built in Media Manager. Users can select images, define the order, and save the gallery, all through a simple drag-n-drop interface. Anyone who has ever added a Featured Image will know exactly what to do.
 
-Additionally, there is an added read function, which mirrors WP's "get_post_thumbnail_id()". "get_post_gallery_ids()", when sent the post's ID, will return a PHP array (not object) with the ID's of all images in the post's featured gallery.
+= Developers =
+
+Just like with Featured Images, of course, themes will need to enable a post's Featured Gallery. The plugin adds a simple function to accomplish thish though, which mirrors WP's built-in **"get_post_thumbnail_id()"**:
+
+**"get_post_gallery_ids()"**, when sent the post's ID, will return a PHP array (not object) with the ID's of all images in the post's featured gallery.
 
 == Installation ==
 
