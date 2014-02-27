@@ -8,17 +8,15 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WordPress includes the ability to give posts a "Featured Image". Galleries require shortcodes, though. This plugin adds "Featured Galleries", which behave exactly like Featured Images, except having multiple images.
+Do you like giving posts a Featured Image? Try out a Featured Gallery. It's like a Featured Images ... except as many images as you want.
 
 == Description ==
 
 Have you ever added a Featured Image to a post and thought to yourself, 'I wish I could add more than one image this way'? Well, now you can. "Featured Galleries" mirrors the Featured Images functionality of WordPress. The only difference is that posts get an entire gallery rather than just a single image. These galleries behave almost exactly like Featured Images, and make use of  WordPress's built in Media Manager. Users can select images, define the order, and save the gallery, all through a simple drag-n-drop interface. Anyone who has ever added a Featured Image will know exactly what to do.
 
-= Developers =
+= Theme Developers =
 
-Just like with Featured Images, of course, themes will need to enable a post's Featured Gallery. The plugin adds a simple function to accomplish thish though, which mirrors WP's built-in **"get_post_thumbnail_id()"**:
-
-**"get_post_gallery_ids()"**, when sent the post's ID, will return a PHP array (not object) with the ID's of all images in the post's featured gallery.
+Just like with Featured Images, of course, themes will need to call a Featured Gallery in any template files where the Featured Gallery should appear. I've tried to make this as intuitive as possible. Just like WordPress comes with **get_post_thumbnail_id()** built-in, you can use **get_post_gallery_ids()** to call the Featured Gallery. It needs the post's ID, and will return a PHP array with the ID's of all images in the post's featured gallery. Additionally you can send a second argument, "string", which will cause the function to return a comma-delimited string instead of an array.
 
 == Installation ==
 
