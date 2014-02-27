@@ -41,7 +41,11 @@ I was tasked to update a Featured Projects page for a client website. Projects w
 
 = Will it be improved? =
 
-Probably. I'm not sure what else there is to change. What I'd really like to see is the functionality adopted into the core. We have featured images, why not featured galleries?
+Possibly. Do you have any suggestions? What I'd really like to see is the functionality adopted into the core. We have featured images, why not featured galleries?
+
+= Can I place the metabox in both the sidebar and under the editor? =
+
+Yes! Turns out there is CSS that lets me changes the behavor of the preview thumbnails depending on the position, so it should look good both in both positions.
 
 == Screenshots ==
 
@@ -50,8 +54,8 @@ Probably. I'm not sure what else there is to change. What I'd really like to see
 
 == Changelog ==
 
-= 0.5 =
-* First public version..
+= 1.0.0 =
+* First public version. Added support for WP's Preview Changes functionality. Accomplished this be using two pieces of metadata.
 
-= 0.1 =
-* First version of this plugin. Entirely in house, pre-repository. Record kept only for organizational purposes.
+= 0.9.0 =
+* Initial test version sent to WP for submission.
