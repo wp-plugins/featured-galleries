@@ -4,7 +4,7 @@ Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
 Tested up to: 3.8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 2. Metabox with images selected and added.
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Minor update, fixed a CSS bug where buttons were incorrectly small on mobile (< 783px) screens.
 
 = 1.0.0 =
 * First public version. Added support for WP's Preview Changes functionality. Accomplished this be using two pieces of metadata.
