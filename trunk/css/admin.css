@@ -31,9 +31,13 @@
 }
 
 /* Special CSS to the Select and Remove Buttons */
+@media screen and (min-width: 783px) {
+	#featuredgallerydiv button {
+		height: 32px !important;
+		padding-top:1px !important;
+	}
+}
 #featuredgallerydiv button {
-	height: 32px !important;
-	padding-top:1px !important;
 	margin-top:5px !important;
 }
 #featuredgallerydiv button#fg_removeall {
