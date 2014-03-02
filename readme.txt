@@ -4,7 +4,7 @@ Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
 Tested up to: 3.8.1
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,7 +58,7 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.1.0 =
 
 * Completely screwed up commits for 1.0.0 and 1.0.1, and copied the entire folder instead of trunk. Fixed now.
 
