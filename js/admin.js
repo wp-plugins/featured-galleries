@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
 		// If the media frame already exists, reopen it.
 		if ( file_frame ) {
 			file_frame.open();
+			fixBackButton();
 			return;
 		}
 		
@@ -65,9 +66,7 @@ jQuery(document).ready(function($){
 		});
 
 		file_frame.on('change', function() {
-			setTimeout(function(){
-				jQuery('.media-menu a:first-child').text('← Edit Selection').addClass('button').addClass('button-large').addClass('button-primary');
-			},0);
+			fixBackButton();
 		});
 		 
 		// When an image is selected, run a callback.
@@ -148,6 +147,16 @@ jQuery(document).ready(function($){
 	});
 
 });
+
+function fixBackButton() {
+
+	setTimeout(function(){
+
+		jQuery('.media-menu a:first-child').text('← Edit Selection').addClass('button').addClass('button-large').addClass('button-primary');
+
+	},0);
+
+}
 
 function ajaxUpdateTempMetaData() {
 
