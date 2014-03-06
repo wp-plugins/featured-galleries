@@ -1,6 +1,6 @@
 <?php
 
-function get_post_gallery_ids($id,$method="array") {
+function get_post_gallery_ids($id,$max_images=-1,$method="array") {
 
 	if (is_preview($id)) {
 
