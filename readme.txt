@@ -4,7 +4,7 @@ Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
 Tested up to: 3.8.1
-Stable tag: 1.1.1
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 2. Metabox with images selected and added.
 
 == Changelog ==
+
+= 1.1.3 =
+
+* Added a new argument to **get_post_gallery_ids()**, allowing it to return only the first image in the gallery.
 
 = 1.1.2 =
 

@@ -14,7 +14,7 @@ function get_post_gallery_ids($id,$method="array") {
 
 	}
 
-	if ($method == "string") {
+	if ($method == "string" || $max_images == "string") {
 
 		return $galleryString;
 
@@ -22,7 +22,17 @@ function get_post_gallery_ids($id,$method="array") {
 
 	else {
 
-		return explode(',', $galleryString);
+		if ($max_images == -1) {
+
+			return explode(',', $galleryString);
+
+		}
+
+		else {
+
+			return array_slice(explode(',', $galleryString), 0, $max_images);
+
+		}
 
 	}
 
