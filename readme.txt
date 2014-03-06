@@ -60,7 +60,7 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 
 = 1.1.4 =
 
-* Slight bug was introduced in 1.1.3, **get_post_gallery_ids()* won't work.
+* Slight bug was introduced in 1.1.3, **get_post_gallery_ids()** won't work.
 
 = 1.1.3 =
 
