@@ -30,6 +30,10 @@
 	border:none;
 }
 
+#featuredgallerydiv .media-modal-icon {
+	background-position: -95px 5px;
+}
+
 /* Special CSS to the Select and Remove Buttons */
 
 @media screen and (min-width: 783px) {
