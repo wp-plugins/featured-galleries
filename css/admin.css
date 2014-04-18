@@ -4,9 +4,9 @@
 .no-sidebar .media-frame-router {
 	left: 0;
 }
-.no-sidebar .media-toolbar,
-.no-sidebar .attachments,
-.no-sidebar .uploader-inline {
+.no-sidebar .attachments-browser .media-toolbar,
+.no-sidebar .attachments-browser .attachments,
+.no-sidebar .attachments-browser .uploader-inline {
 	right: 0;
 }
 .no-sidebar .media-sidebar,
@@ -32,6 +32,15 @@
 
 #featuredgallerydiv .media-modal-icon {
 	background-position: -95px 5px;
+}
+
+.media-frame-content {
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.media-frame-toolbar, .media-menu {
+	border: 0;
+	box-shadow: none;
 }
 
 /* Special CSS to the Select and Remove Buttons */
