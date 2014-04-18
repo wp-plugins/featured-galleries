@@ -31,21 +31,26 @@
 }
 
 /* Special CSS to the Select and Remove Buttons */
+
 @media screen and (min-width: 783px) {
 	#featuredgallerydiv button {
 		height: 32px !important;
 		padding-top:1px !important;
 	}
 }
+
 #featuredgallerydiv button {
 	margin-top:5px !important;
 }
+
 #featuredgallerydiv button#fg_removeall {
 	display:none;
 }
+
 #featuredgallerydiv button#fg_removeall.visible {
 	display:inline;
 }
+
 #featuredgallerydiv button#fg_removeall:before {
 	content:"\f153";
 	font-family:"dashicons";
@@ -54,15 +59,28 @@
 	left:-1px;
 }
 
+#featuredgallerydiv button#fg_removeall.premp6:before {
+	content: "";
+	display:inline-block;
+	width:10px;
+	height:10px;
+	left:-4px;
+	top:1px;
+	background:url('/wp-includes/images/xit.gif') 0 50% no-repeat;
+}
+
 /* CSS to the Preview List */
+
 #featuredgallerydiv ul {
 	margin:0;
 }
+
 #featuredgallerydiv ul li {
 	margin:10px 0 0 0;
 	position:relative;
 	width:100%;
 }
+
 #postbox-container-2 #featuredgallerydiv ul li {
 	width:32%;
 	margin-right:1%;
@@ -95,9 +113,11 @@
 	border-radius: 3px;
 	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
 }
+
 #featuredgallerydiv ul li:hover button {
 	display:block;
 }
+
 #featuredgallerydiv ul li button:hover {
 	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.6);
 }

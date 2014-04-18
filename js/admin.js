@@ -1,7 +1,10 @@
 jQuery(document).ready(function($){
 
 	// Uploading files
-	var file_frame;
+
+	if (jQuery('#fg_removeall').hasClass('premp6')) {var button = '<button class="media-modal-icon"></button>';}
+
+	else {var button = '<button></button>';}
 	
 	jQuery('#fg_select').on('click', function(event){
 	
@@ -15,7 +18,7 @@ jQuery(document).ready(function($){
 		}
 		
 		// Create the media frame.
-		file_frame = wp.media.frame = wp.media({
+		var file_frame = wp.media.frame = wp.media({
 			frame: "post",
 			state: "featured-gallery",
 			library : { type : 'image'},
@@ -39,7 +42,6 @@ jQuery(document).ready(function($){
 				displayUserSettings: true
 			}),
 		]);
-
 		
 		file_frame.on('open', function() {
 			var selection = file_frame.state().get('selection');
@@ -77,7 +79,7 @@ jQuery(document).ready(function($){
 			images = file_frame.state().get('library');
 			images.each(function(attachment) {
 				imageIDArray.push(attachment.attributes.id);
-				imageHTML += '<li><button></button><img id="'+attachment.attributes.id+'" src="'+attachment.attributes.url+'"></li>';
+				imageHTML += '<li>'+button+'<img id="'+attachment.attributes.id+'" src="'+attachment.attributes.url+'"></li>';
 			});
 			metadataString = imageIDArray.join(",");
 			if (metadataString) {

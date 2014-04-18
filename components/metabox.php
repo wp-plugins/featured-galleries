@@ -20,13 +20,14 @@ function fg_display_metabox() {
 
 	// Get the Information data if its already been entered
 	$galleryHTML = '';
+	if (get_bloginfo('version') >= 3.8) {$button = '<button></button>';} else {$button = '<button class="media-modal-icon"></button>'; $oldfix = ' premp6';}
 	$selectText = 'Select Images';
 	$visible = ''; //SHOULD WE SHOW THE REMOVE ALL BUTTON? THIS WILL BE APPLIED AS A CLASS, AND IS BLANK BY DEFAULT.
 	$galleryArray = get_post_gallery_ids($post->ID);
 	$galleryString = get_post_gallery_ids($post->ID, 'string');
 	if (!empty($galleryString)){
 		foreach ($galleryArray as &$id) {
-			$galleryHTML .= '<li><button></button><img id="'.$id.'" src="'.wp_get_attachment_url($id).'"></li> ';
+			$galleryHTML .= '<li>'.$button.'<img id="'.$id.'" src="'.wp_get_attachment_url($id).'"></li> ';
 		}
 		$selectText = 'Edit Selection';
 		$visible = " visible";
@@ -40,7 +41,7 @@ function fg_display_metabox() {
 
 	<button class="button" id="fg_select"><?php echo $selectText; ?></button>
 
-	<button class="button<?php echo $visible; ?>" id="fg_removeall">Remove All</button>
+	<button class="button<?php echo $visible.$oldfix; ?>" id="fg_removeall">Remove All</button>
 
 	<ul><?php echo $galleryHTML; ?></ul><div style="clear:both;"></div><?php
 

@@ -3,8 +3,8 @@ Contributors:
 Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
-Tested up to: 3.8.1
-Stable tag: 1.1.6
+Tested up to: 3.9
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,11 +20,11 @@ Have you ever added a Featured Image to a post and thought to yourself, 'I wish 
 
 Just like with Featured Images themes will need to call a Featured Gallery in any template file where the Featured Gallery should appear. I've tried to make this as intuitive as possible.
 
-Just like WordPress comes with `get_post_thumbnail_id()` built-in, you can use `get_post_gallery_ids()` to call the Featured Gallery. It needs the post's ID, and will return a PHP array with the ID's of all images in the post's featured gallery. Additionally you can send a second argument, "string", which will cause the function to return a comma-delimited string instead of an array.
+Just like WordPress comes with `get_post_thumbnail_id()` built-in, you can use `get_post_gallery_ids()` to call the Featured Gallery. It needs the post's ID, and will return a PHP array with the ID's of all images in the post's Featured Gallery. Additionally you can send a second argument, "string", which will cause the function to return a comma-delimited string instead of an array.
 
-= --Examples -- =
+= --Examples-- =
 
-This example fulls the entire Featured Gallery, as an array, then loops through to display each as an `img`.
+This example pulls the entire Featured Gallery, as an array, then loops through to display each as an `img`.
 
     $galleryArray = get_post_gallery_ids($post->ID); 
 
@@ -89,6 +89,11 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 2. Metabox with images selected and added.
 
 == Changelog ==
+
+= 1.2.0 =
+
+* Added compatibility for WordPress 3.9 (Had to rearrange the javascript slightly).
+* Improved compatibility for WordPress 3.5 - 3.7 by using built in icon images instead of Dashicons in those versions.
 
 = 1.1.6 =
 
