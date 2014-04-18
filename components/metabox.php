@@ -49,22 +49,24 @@ function fg_display_metabox() {
 
 function fg_save_perm_metadata($post_id, $post) {
 
+	//Only run the call when updating a Featured Gallery.
+	if ( empty( $_POST["fg_perm_noncedata"] ) ) {return;}
 	// Noncename
-	if ( !wp_verify_nonce( $_POST['fg_perm_noncedata'], plugin_basename(__FILE__) )) {return $post->ID;}
+	if ( !wp_verify_nonce( $_POST['fg_perm_noncedata'], plugin_basename(__FILE__) ) ) {return;}
 	// Verification of User
-	if ( !current_user_can( 'edit_post', $post->ID )) {return $post->ID;}
+	if ( !current_user_can( 'edit_post', $post->ID ) ) {return;}
 	// OK, we're authenticated: we need to find and save the data
 	$events_meta['fg_perm_metadata'] = $_POST['fg_perm_metadata'];
 	// Add values of $events_meta as custom fields
-	foreach ($events_meta as $key => $value) {
-		if( $post->post_type == 'revision' ) return;
+	foreach ( $events_meta as $key => $value ) {
+		if ( $post->post_type == 'revision' ) {return;}
 		$value = implode(',', (array)$value);
-		if(get_post_meta($post->ID, $key, FALSE)) {
-			update_post_meta($post->ID, $key, $value);
+		if ( get_post_meta( $post->ID, $key, FALSE ) ) {
+			update_post_meta( $post->ID, $key, $value );
 		} else {
-			add_post_meta($post->ID, $key, $value);
+			add_post_meta( $post->ID, $key, $value );
 		}
-		if(!$value) delete_post_meta($post->ID, $key);
+		if ( !$value ) delete_post_meta( $post->ID, $key );
 	}
 
 }
