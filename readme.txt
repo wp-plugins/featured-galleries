@@ -4,7 +4,7 @@ Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
 Tested up to: 3.9
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,9 +90,13 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 
 == Changelog ==
 
+= 1.2.4 =
+
+* Fixes a type in the readme.txt file.
+
 = 1.2.3 = 
 
-As reported in suppor thread, error messages were being thrown in WP DEBUG mode, when trying to save things unrelated to plugin. Fixes those errors.
+* As reported in suppor thread, error messages were being thrown in WP DEBUG mode, when trying to save things unrelated to plugin. Fixes those errors.
 
 = 1.2.2 = 
 
