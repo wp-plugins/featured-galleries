@@ -1,5 +1,5 @@
 === Featured Galleries ===
-Contributors: 
+Contributors: kelderic
 Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
