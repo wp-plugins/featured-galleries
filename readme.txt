@@ -2,7 +2,7 @@
 Contributors: kelderic
 Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
-Requires at least: 3.5.0
+Requires at least: 3.8.0
 Tested up to: 3.9
 Stable tag: 1.2.4
 License: GPLv2 or later
