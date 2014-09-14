@@ -1,10 +1,10 @@
 === Featured Galleries ===
-Contributors: kelderic
+Contributors: kelderic, drivingralle
 Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
 Tested up to: 4.0
-Stable tag: 1.2.4
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,9 +90,14 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 
 == Changelog ==
 
+= 1.3.0 =
+
+* Added internationalization and German translation. Props to Drivingralle.
+* Formatting fixes to better match WordPress PHP best practices. Props Drivingralle.
+
 = 1.2.4 =
 
-* Fixes a type in the readme.txt file.
+* Fixes a typo in the readme.txt file.
 
 = 1.2.3 = 
 
