@@ -4,7 +4,7 @@ Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
 Tested up to: 4.0
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,10 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 2. Metabox with images selected and added.
 
 == Changelog ==
+
+= 1.3.1 =
+
+* Fixed issue where the scripts required to open the Media Manager might notbe enqueued.
 
 = 1.3.0 =
 
