@@ -3,8 +3,8 @@ Contributors: kelderic, drivingralle
 Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
-Tested up to: 4.0
-Stable tag: 1.3.1
+Tested up to: 4.1
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,12 @@ Yes! Turns out there is CSS that lets me changes the behavor of the preview thum
 2. Metabox with images selected and added.
 
 == Changelog ==
+
+= 1.4.0 =
+
+* WordPress 4.1 compatibility bump.
+* Bugfix: Margin difference between buttons on left and right in media model.
+* Bugfix: Button type and text change didn't fire when Media model defaults to upload instead of to media library.
 
 = 1.3.1 =
 

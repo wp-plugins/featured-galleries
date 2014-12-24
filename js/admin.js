@@ -65,9 +65,6 @@ jQuery(document).ready(function($){
 
 		file_frame.on('ready', function() {
 			jQuery( '.media-modal' ).addClass( 'no-sidebar' );
-		});
-
-		file_frame.on('change', function() {
 			fixBackButton();
 		});
 		 

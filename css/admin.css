@@ -28,6 +28,7 @@
 .no-sidebar .media-frame-menu .media-menu {
 	background-color:transparent;
 	border:none;
+	padding: 15px 0px;
 }
 
 #featuredgallerydiv .media-modal-icon {
