@@ -4,7 +4,7 @@ Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
 Tested up to: 4.1
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,8 @@ Do you like giving posts a Featured Image? Try out a Featured Gallery. It's like
 = Hello Theme Developers! =
 
 Have you ever added a Featured Image to a post and thought to yourself, 'I wish I could add more than one image this way'? Well, now you can. "Featured Galleries" mirrors the Featured Images functionality of WordPress. The only difference is that posts get an entire gallery rather than just a single image. These galleries behave almost exactly like Featured Images, and make use of  WordPress's built in Media Manager. Users can select images, define the order, and save the gallery, all through a simple drag-n-drop interface.
+
+**Note**: This is not a plugin which will add galleries to your website. This is for theme developers. It handles the backend interface for creating featured galleries, and storing them. You will still need to build a gallery on your page templates. That said, I'm in the process of building several example galleries, and will be adding them along with tutorials given the multiple requests.
 
 = --Instructions-- =
 
@@ -50,6 +52,16 @@ Finally, you may want to just grab the first image of the gallery. You can do th
 
     <?php } ?>
 
+= Adding Featured Galleries to a Custom Post Type =
+
+I've included a hook to allow you to easily integrate featured galleries into a custom post type. In your theme `functions.php` file, simply add this:
+
+    
+    function add_featured_galleries_to_ctp( $post_types ) {
+        return array('customposttypeslug');
+    }
+    add_filter('fg_post_types', 'add_featured_galleries_to_ctp' );
+
 = Want to Help? =
 
 I'd love some help with internationalization. I'm not sure how to do that. Also, if anyone wants to take a look at `admin.js`, which calls up the media manager, I feel like the way that I open it to the gallery-edit state could be improved. (Opens to` featured-gallery` state, plugs in pre-selected images, then changes state to `gallery-edit`, and plugs in pre-selected images. Couldn't get selection to transfer, so there's a weird flash as it propagates.)
@@ -83,12 +95,20 @@ Possibly. Do you have any suggestions? What I'd really like to see is the functi
 
 Yes! Turns out there is CSS that lets me changes the behavor of the preview thumbnails depending on the position, so it should look good both in both positions.
 
+= Can I add a featured gallery to my custom post type? =
+
+Why yes you can! You don't even have to edit the plugin to do so. There are details on how to do this in the Instructions.
+
 == Screenshots ==
 
 1. Initial metabox, no images in the gallery.
 2. Metabox with images selected and added.
 
 == Changelog ==
+
+= 1.4.1 =
+
+* Updating readme to add example code for custom post types.
 
 = 1.4.0 =
 
