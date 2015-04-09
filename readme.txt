@@ -3,8 +3,8 @@ Contributors: kelderic, drivingralle
 Donate link: http://www.andymercer.net
 Tags: admin,backend,galleries,featured,images
 Requires at least: 3.5.0
-Tested up to: 4.1
-Stable tag: 1.4.1
+Tested up to: 4.2
+Stable tag: 1.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,11 @@ Why yes you can! You don't even have to edit the plugin to do so. There are deta
 2. Metabox with images selected and added.
 
 == Changelog ==
+
+= 1.4.2 =
+
+* Bugfix: Undefined variable `$oldfix` when running post-MP6 versions of WordPress (3.9 and over). Props Joshuadnelson.
+* WordPress 4.2 compatibility bump.
 
 = 1.4.1 =
 

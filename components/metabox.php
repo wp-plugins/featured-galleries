@@ -19,7 +19,7 @@ function fg_display_metabox() {
 	global $post;
 
 	// Get the Information data if its already been entered
-	$galleryHTML = '';
+	$galleryHTML = ''; $oldfix = '';
 	if ( get_bloginfo( 'version' ) >= 3.8 ) {
 		$button = '<button></button>';
 	} else {
